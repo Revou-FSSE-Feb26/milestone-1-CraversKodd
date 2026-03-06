@@ -1,0 +1,62 @@
+int eggsAmount;
+int eggsMin = 4;
+int milkAmount;
+int milkMin = 200; //mm
+int flourAmount;
+int flourMin = 100; //grams
+
+System.out.Println("Hello user")
+System.out.Println("bkyatmaker is starting")
+System.out.Println("How many eggs do you have")
+
+Scanner userInput;
+userInput = new Scanner(System.in);
+eggsAmount = userInput.nextIn();
+System.out.Println("you have" + eggsAmount + eggs");
+//ini buat kalibrasi telor
+
+System.out.Println("how many milk you have?");
+userInput = new Scanner(System.in);
+milkAmount = userInput.nextIn();
+System.out.Println("you have" + milkAmount + "ml milk");
+// ini buat kalibrasi susu
+
+System.out.Println("how much flour you have?");
+userInput = new Scanner("system.in");
+flourAmount = userInput.nextIn();
+System.out.Println("you have" + flourAmount + "g flour");
+
+//main code below
+    if (eggsAmount < eggsMin < || milkAmount < milkMin || flourAmount < flourMin) {
+        System.out.Println ("sorry no blin cake for today");
+} else {
+    // perhitungan (buat porsi)
+    eggsAmount = eggsAmount / eggsMin;
+    System.out.Println("you have " + " portion of eggs");
+    
+    flourAmount = flourAmount / flourMin;
+    System.out.Println("you have " + milkAmount + " portion of flour");
+
+    milkAmount = milkAmount / milkMin;
+    System.out.Println("you have " + " portion of milk");
+
+    //ini untuk menentukan yg terkecil dari ke 3nya
+    int smallest;
+    if (eggsAmount <= milkAmount && milkAmount <= flourAmount) {
+        smallest = eggsAmount
+    } else if (milkAmount <= flourAmount && milkAmount <= eggsAmount) {
+        smallest = milkAmount;
+    } else {
+        smallest = flourAmount;
+    }
+    System.out.Println(""); // setiap porsi itu terdiri dari 4 blin (kue)
+    System.out.Println("you can make " + smallest*4 + " of blin");
+    System.out.Println("");
+    System.out.Println("you will need " + smallest*eggsMin + " eggs");
+    System.out.Println("you will need " + smallest*eggsMin + "g flour");
+    System.out.Println("you will need " + smallest*eggsMin + "ml milk");
+    System.out.Println("");    
+    System.out.Println("blinmaker shutting down...");
+    // end of system
+
+userInput = new Scanner(System.in);
