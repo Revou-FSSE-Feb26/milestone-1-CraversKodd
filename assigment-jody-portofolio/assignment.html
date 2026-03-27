@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Jody Arrazy</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assignment.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">J O D Y</div>
+        <nav aria-label="Main Navigation">    
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" aria-labelledby="home-heading">
+            
+            <figure>
+                <img src="image.jpg" alt="Jody Arrazy Photo" class="profile-pic">
+            </figure>
+            <p class="subtitle">Hello, I'm Jody</p>
+
+            <p class="bio-text">
+                My full name is Jody Arrazy Suwtapradja, and you can call me Jody. I am a graduate of Institut Teknologi Nasional Bandung majoring in Urban and Regional Planning (Planology). 
+                I am interested in data analysis, GIS analysis, and design. I am currently learning web development and 
+                data analysis to expand my skills and knowledge in the field of technology.
+            </p>
+        </section>
+
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <div class="about-container">
+                <article class="about-box">
+                    <h3>Experience</h3>
+                    <ul>
+                        <li>
+                            <strong>Web Development Bootcamp at freeCodeCamp</strong> (2021)
+                            <br>Learned the basics of HTML, CSS, responsive design, and JavaScript.
+                        </li>
+                        <li>
+                            <strong>Internship at WIKA</strong> - Satellite Remote Sensing (2022-2023)
+                            <br>Processed satellite data using QGIS, ArcGIS, and Google Earth Pro.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="about-box">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Basic knowledge of HTML & CSS</li>
+                        <li>Proficient in ArcGIS, QGIS, and Google Earth Pro</li>
+                        <li>Strong data cleaning and analytical skills</li>
+                        <li>Excellent communication and teamwork</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Responsive Website Design</h3>
+                    <p>Created a user-friendly interface that adapts to various screen sizes using HTML and CSS.</p>
+                    <a href="#" class="project-link">View Project Details &rarr;</a>
+                </article>
+                
+                <article class="project-card">
+                    <h3>Data Analysis (QGIS & Excel)</h3>
+                    <p>Analyzed complex geospatial datasets and satellite imagery to derive meaningful insights.</p>
+                    <a href="#" class="project-link">View Project Details &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <p>Have a question or want to work together? Fill out the form below!</p>
+                
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <label class="radio-group" for="male">
+                                <input type="radio" id="male" name="gender" value="male"> Male
+                            </label>
+                            <label class="radio-group" for="female">
+                                <input type="radio" id="female" name="gender" value="female"> Female
+                            </label>
+                        </fieldset>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit">Send Message</button> 
+                        <button type="reset">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Reach Me Out Via</h3>
+            <address>
+                <dl class="contact-list">
+                    <div class="contact-item">
+                        <dt>WhatsApp</dt>
+                        <dd>+62 (123) 456-1234</dd>
+                    </div>
+                    <div class="contact-item">
+                        <dt>Email</dt>
+                        <dd><a href="mailto:jody@email.com">jody@email.com</a></dd>
+                    </div>
+                    <div class="contact-item">
+                        <dt>LinkedIn</dt>
+                        <dd><a href="https://linkedin.com/in/jody-arrazy/" target="_blank" rel="noopener noreferrer">linkedin.com/in/jody-arrazy/</a></dd>
+                    </div>
+                </dl>
+            </address>
+        </div>
+        <p class="copyright"><small>&copy; 2026 Jody Arrazy. All rights reserved.</small></p>
+    </footer>
+
+</body>
+</html>
