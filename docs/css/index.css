@@ -89,9 +89,14 @@ h2::after {
 
 /* --- Styling Home page --- */
 #home {
-    background: linear-gradient(135deg, var(--bg-light) 0%, #e2e8f0 100%);
     text-align: center;
     padding: 8rem 10%;
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    pad: 8rem 10%;
 }
 
 #home h1 {
@@ -100,9 +105,18 @@ h2::after {
     margin-bottom: 0.5rem;
 }
 
+.glass-box {
+  width: 100%;
+  height: auto;
+  background: rgba(243, 241, 241, 0.379);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(50px);
+  border-radius: 5%;
+}
+
 .subtitle {
     font-size: 1.5rem;
-    color: var(--text-muted);
+    color: rgb(224, 223, 223);
     margin-bottom: 2rem;
 }
 
@@ -120,7 +134,7 @@ h2::after {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.1rem;
-    color: var(--text-muted);
+    color:rgb(224, 223, 223);
 }
 
 /* --- Bagian About me --- */
